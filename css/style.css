@@ -184,7 +184,8 @@ body {
   text-transform: uppercase;
 }
 
-.order {
+.order,
+.footer-btn {
   width: 200px;
   height: 50px;
   color: var(--white-color);
@@ -403,10 +404,11 @@ body {
 .footer {
   background-color: var(--bg-color-black);
   min-height: 250px;
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 
 .footer-list {
+  padding-top: 60px;
   display: flex;
 }
 
@@ -435,9 +437,11 @@ body {
 
 .footer .social-network {
   margin-top: 20px;
+  margin-right: 93px;
 }
 
 .footer .title {
+  margin-top: 12px;
   color: var(--white-color);
 }
 
@@ -449,6 +453,41 @@ body {
 .footer .social-network .link:hover,
 .footer .social-network .link:focus {
   box-shadow: none;
+}
+
+.footer .input {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--bg-color-black);
+}
+
+.footer .input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.footer-btn::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/telegram.svg);
 }
 
 /* ==========portpholio===========*/
