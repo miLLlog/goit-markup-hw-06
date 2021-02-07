@@ -497,9 +497,72 @@
         </ul>
       </div>
     </footer>
+    <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <h2 class="title list">Оставьте свои данные, мы вам перезвоним</h2>
         <button class="close" data-modal-close>❌</button>
+        <form class="js-speaker-form" autocomplete="off">
+          <ul class="modal-list list">
+            <li class="item">
+              <label class="lable"
+                >Имя
+                <span class="wrapper">
+                  <input class="input list" type="text" name="name" />
+                  <svg class="icon" width="18px" height="18px">
+                    <use href="../img/sprite.svg#icon-personblack"></use>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="item">
+              <label class="lable">
+                Телефон
+                <span class="wrapper">
+                  <input class="input list" type="tel" name="tel" />
+                  <svg class="icon" width="18px" height="18px">
+                    <use href="../img/sprite.svg#icon-phoneblack"></use>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="item">
+              <label class="lable">
+                Почта
+                <span class="wrapper">
+                  <input class="input list" type="email" name="mail" />
+                  <svg class="icon" width="18px" height="18px">
+                    <use href="../img/sprite.svg#icon-emailblack"></use>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="item">
+              <label class="lable"
+                >Комментарий
+                <textarea
+                  class="comment list"
+                  name="comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+            </li>
+          </ul>
+          <div class="agree">
+            <label class="lable">
+              <input type="checkbox" class="checkbox" name="agree" />
+              <div class="agree-icon">
+                <svg class="icon-check" width="15" height="15">
+                  <use href="./img/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+
+              Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a>
+            </label>
+          </div>
+          <button class="btn-push item" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
