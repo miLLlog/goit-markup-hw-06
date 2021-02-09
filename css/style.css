@@ -208,45 +208,20 @@ body {
   text-transform: uppercase;
 }
 
-.feature-item::before {
-  display: block;
-  content: '';
+.feature-list {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.feature-item .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bg-color);
-}
-
-.icon-antenna::before {
-  background-image: url(../img/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-clock::before {
-  background-image: url(../img/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-diagram::before {
-  background-image: url(../img/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-astronaut::before {
-  background-image: url(../img/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.feature-list {
-  display: flex;
-}
-
-.feature-list {
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .feature-list li:not(:last-child) {
