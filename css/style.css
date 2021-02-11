@@ -464,17 +464,14 @@ body {
 .footer-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   margin-left: 10px;
 }
 
-.footer-btn::after {
-  content: '';
-  width: 24px;
-  height: 24px;
+.footer-btn-icon {
   margin-left: 10px;
-  background-image: url(../img/telegram.svg);
+  fill: #ffffff;
 }
-
 /* ==========portpholio===========*/
 
 /* button */
